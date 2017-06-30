@@ -1,0 +1,30 @@
+UPDATED BENCHMARK: RCU PROTECTED ARRAY vs RCU PROTECTED LISTS
+======================================================================================
+
+Authors
+-------
+Name:  Pijush Chakraborty
+Email: pijush@cse.iitb.ac.in
+
+GENERAL
+=====================
+
+To test the effect of using array based semantics rather than list based semantics for
+small node sizes, the benchamrk has been updated to include an RCU protected array. 
+
+Note: The test results can be found inside 'TestRes' directory.
+
+To run all bench tests, execute:
+./run_all.sh
+
+To run the new bench tests, execute:
+./testX.sh [# therads] [# buckets] [# wset] [# update rate] [# file arcu] [# file rcu]
+
+For individual cases 
+./rcu_test.sh [# therads] [# buckets] [# wset] [# update rate] [# file rcu]
+./arcu_test.sh [# therads] [# buckets] [# wset] [# update rate] [# file arcu]
+
+To plot the data generated, execute:
+gnuplot plotX.plot [Note: plotX.plot must be edited for the perfect plot]
+
+The original benchmark can be found here: https://github.com/rlu-sync/rlu
