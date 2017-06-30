@@ -1,0 +1,28 @@
+[mtcp_create_context:1262] CPU 2 is now the master thread.
+10      0       0       0 0.14 0.00 0.0000000 0.00  0.00 -nan
+CPU 1: initialization finished.
+CPU 5: initialization finished.
+CPU 6: initialization finished.
+CPU 4: initialization finished.
+CPU 3: initialization finished.
+CPU 0: initialization finished.
+20   2000 3096010 3094940 17519287.57 0.43 0.0000000 1332458.71  0.00 0.0000000
+30   2000 4295420 4295424 9588.00 0.00 0.0000000 1850482.57  0.00 0.0000000
+[promod-all] Th: 1686.588850
+^C[RunMainLoop: 886] MTCP thread 0 finished.
+[mtcp_destroy_context:1307] MTCP thread 0 joined.
+[RunMainLoop: 886] MTCP thread 1 finished.
+[mtcp_destroy_context:1307] MTCP thread 1 joined.
+[RunMainLoop: 886] MTCP thread 2 finished.
+[RunMainLoop: 886] MTCP thread 4 finished.
+[mtcp_destroy_context:1307] MTCP thread 2 joined.
+[RunMainLoop: 886] MTCP thread 6 finished.
+[RunMainLoop: 886] MTCP thread 5 finished.
+[mtcp_destroy_context:1307] MTCP thread 4 joined.
+[mtcp_destroy_context:1307] MTCP thread 6 joined.
+[mtcp_destroy_context:1307] MTCP thread 5 joined.
+40      3  202519  203043 2800436.00 0.14 0.0000001 86870.43  0.00 0.0000000
+^C[RunMainLoop: 886] MTCP thread 3 finished.
+[mtcp_destroy_context:1307] MTCP thread 3 joined.
+[mtcp_destroy:1541] All MTCP threads are joined.
+

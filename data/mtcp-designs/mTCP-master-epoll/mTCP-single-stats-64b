@@ -1,0 +1,53 @@
+SERVER:
+[mtcp_create_context:1262] CPU 1 is now the master thread.
+10      0       0       0 0.00 0.00 -nan 0.00  0.00 -nan
+CPU 0: initialization finished.
+CPU 4: initialization finished.
+CPU 6: initialization finished.
+CPU 2: initialization finished.
+CPU 5: initialization finished.
+CPU 3: initialization finished.
+1
+20   2000 2228673 2228273 60348791.14 1.71 0.0000000 958556.14  0.14 0.0000001
+30   2000 6426560 6426560 14345.00 0.00 0.0000000 2768587.43  0.00 0.0000000
+[promod-all] Th: 1341.098349
+40     10 4811806 4818569 21662849.57 0.57 0.0000000 2070347.14  0.00 0.0000000
+^C[RunMainLoop: 886] MTCP thread 0 finished.
+[mtcp_destroy_context:1307] MTCP thread 0 joined.
+[RunMainLoop: 886] MTCP thread 1 finished.
+[mtcp_destroy_context:1307] MTCP thread 1 joined.
+50     10       0      60 15997507.57 0.00 0.0000000 4.29  0.00 0.0000000
+[RunMainLoop: 886] MTCP thread 4 finished.
+[mtcp_destroy_context:1307] MTCP thread 4 joined.
+
+
+SERVER-2:
+Waiting: CPU 5: initialization finished.
+CPU 6: initialization finished.
+CPU 1: initialization finished.
+[mtcp_create_context:1262] CPU 5 is now the master thread.
+10      0     167      64 0.14 0.00 0.0000000 0.00  0.00 -nan
+CPU 0: initialization finished.
+CPU 2: initialization finished.
+CPU 3: initialization finished.
+CPU 4: initialization finished.
+10
+20    888 5998624 5998594 4791666.14 0.00 0.0000000 2576605.14  0.14 0.0000001
+30      0 5366372 5368408 15239600.14 0.14 0.0000000 2304484.57  0.14 0.0000001
+[promod-all] Th: 1131.988724
+^C[RunMainLoop: 886] MTCP thread 0 finished.
+[mtcp_destroy_context:1307] MTCP thread 0 joined.
+[RunMainLoop: 886] MTCP thread 2 finished.
+[RunMainLoop: 886] MTCP thread 5 finished.
+[RunMainLoop: 886] MTCP thread 3 finished.
+[RunMainLoop: 886] MTCP thread 4 finished.
+[RunMainLoop: 886] MTCP thread 1 finished.
+[RunMainLoop: 886] MTCP thread 6 finished.
+[mtcp_destroy_context:1307] MTCP thread 2 joined.
+[mtcp_destroy_context:1307] MTCP thread 5 joined.
+[mtcp_destroy_context:1307] MTCP thread 3 joined.
+[mtcp_destroy_context:1307] MTCP thread 4 joined.
+[mtcp_destroy_context:1307] MTCP thread 1 joined.
+[mtcp_destroy_context:1307] MTCP thread 6 joined.
+
+

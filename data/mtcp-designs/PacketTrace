@@ -1,0 +1,72 @@
+CLIENT:
+Client Sending:
+GET /hello_world.txt HTTP/1.0
+User-Agent: Wget/1.12 (linux-gnu)
+Accept: */*
+Host: 10.129.28.93
+Connection: Close
+
+
+Received:
+HTTP/1.1 200 OK
+Date: Tue, 27 Jun 2017 09:33:50 GMT
+Server: Webserver on Middlebox TCP (Ubuntu)
+Content-Length: 12
+Connection: Close
+
+Hello World
+
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+
+SERVER:
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+CPU 2: initialization finished.
+CPU 1: initialization finished.
+
+[core.c RunMainLoop] Core: 2 | Packet Received
+[tcp_in.c ProcessTCPPacket] Core: 2 | First SYN Received
+[core.c RunMainLoop] Core: 2 | Packet Received
+[tcp_in.c ProcessTCPPacket] Core: 2 | ACK Received
+
+[tcp_in.c Handle_TCP_ST_SYN_RCVD] Core: 2 | Adding Stream to Listner[0] acceptQ
+[tcp_in.c Handle_SYN_RCVD] Core: 2 | Adding Listen Event to MTCP_QUEUE
+
+[RunServerThread.c epserver.c] Core: 0 | Accepting Connection
+[epserver.c AcceptConnection] Connection Accepted | Socket: 4 | Worker-id: 1
+
+[core.c RunMainLoop] Core: 2 | Packet Received
+[tcp_in.c ProcessTCPPacket] Core: 2 | Read Data Stream Enqueued to core[1]
+
+[tcp_in.c Handle_TCP_ST_ESTABLISHED] Core: 1 | Processing TCP Payload
+[tcp_in.c ProcessTCPPacket] Core: 1 | Adding Read Event to MTCP_QUEUE
+
+[RunServerThread epserver.c] Core 0 | Enqueue Read Event | Socket: 4 | To-Worker-id: 1
+[RunIO Thread] Read Event Dequeued | Worker-id: 1
+
+[epserver.c HandleReadEvent] Data Read | Socket: 4 | Worker-id: 1
+Buffer:
+GET /hello_world.txt HTTP/1.0
+User-Agent: Wget/1.12 (linux-gnu)
+Accept: */*
+Host: 10.129.28.93
+Connection: Close
+
+[api.c mtcp_write] Core 1 | Data Write | Socket: 4 | Sending Data: HTTP/1.1 200 OK
+Date: Tue, 27 Jun 2017 09:33:50 GMT
+Server: Webserver on Middlebox TCP (Ubuntu)
+Content-Length: 12
+Connection: Close
+
+
+[epserver.c SendDataUntilAvailable] Data Sending | Socket: 4 | Worker-id: 1
+[api.c mtcp_write] Core 1 | Data Write | Socket: 4 | Sending Data: Hello World
+
+[core.c RunMainLoop] Core: 2 | Packet Received
+[tcp_in.c ProcessTCPPacket] Core: 2 | Read Data Stream Enqueued to core[1]
+[core.c RunMainLoop] Core: 2 | Packet Received
+[tcp_in.c ProcessTCPPacket] Core: 2 | Read Data Stream Enqueued to core[1]
+[mtcp_destroy_context:1415] MTCP thread 0 joined.
+
+

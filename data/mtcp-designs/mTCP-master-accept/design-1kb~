@@ -1,0 +1,90 @@
+CLIENT:
+[mtcp_create_context:1242] CPU 0 is now the master thread.
+CPU 1: initialization finished.
+Thread 0 handles 1000 flows. connecting to 10.129.28.93:80
+Thread 1 handles 1000 flows. connecting to 10.129.28.93:80
+[Core 0] 1000 Connections Started
+[Core 1] 1000 Connections Started
+[Promod-All] Connects:    2000 Read: 1370 KB Avg-Resp-Time: 30759 us Max-Resp-Time: 11918725 us
+^C^C[RunMainLoop: 862] MTCP thread 0 finished.
+[mtcp_destroy_context:1287] MTCP thread 0 joined.
+[RunMainLoop: 862] MTCP thread 1 finished.
+[mtcp_destroy_context:1287] MTCP thread 1 joined.
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+SERVER:
+
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+[mtcp_create_context:1395] CPU 0 is now the master thread.
+[0]: 0
+Waiting: CPU 5: initialization finished.
+CPU 6: initialization finished.
+CPU 1: initialization finished.
+CPU 4: initialization finished.
+CPU 3: initialization finished.
+CPU 2: initialization finished.
+10
+[promod-all] Th: 1370.272222
+^C^C^C[RunMainLoop: 956] MTCP thread 0 finished.
+[RunMainLoop: 956] MTCP thread 6 finished.
+[mtcp_destroy_context:1440] MTCP thread 0 joined.
+[mtcp_destroy_context:1440] MTCP thread 6 joined.
+[RunMainLoop: 956] MTCP thread 3 finished.
+[mtcp_destroy_context:1440] MTCP thread 3 joined.
+[RunMainLoop: 956] MTCP thread 2 finished.
+[mtcp_destroy_context:1440] MTCP thread 2 joined.
+[RunMainLoop: 956] MTCP thread 1 finished.
+[mtcp_destroy_context:1440] MTCP thread 1 joined.
+[RunMainLoop: 956] MTCP thread 5 finished.
+[RunMainLoop: 956] MTCP thread 4 finished.
+[mtcp_destroy_context:1440] MTCP thread 5 joined.
+[mtcp_destroy_context:1440] MTCP thread 4 joined.
+[mtcp_destroy:1674] All MTCP threads are joined.
+
+CLIENT:
+
+CPU 1: initialization finished.
+[mtcp_create_context:1242] CPU 1 is now the master thread.
+CPU 0: initialization finished.
+Thread 1 handles 1000 flows. connecting to 10.129.28.93:80
+Thread 0 handles 1000 flows. connecting to 10.129.28.93:80
+[Core 1] 1000 Connections Started
+[Core 0] 1000 Connections Started
+[Promod-All] Connects:    2000 Read: 1425 KB Avg-Resp-Time: 32729 us Max-Resp-Time: 7688415 us
+^C^C[RunMainLoop: 862] MTCP thread 0 finished.
+[mtcp_destroy_context:1287] MTCP thread 0 joined.
+[RunMainLoop: 862] MTCP thread 1 finished.
+[mtcp_destroy_context:1287] MTCP thread 1 joined.
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+SERVER:
+
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+[mtcp_create_context:1395] CPU 0 is now the master thread.
+[0]: 0
+Waiting: CPU 6: initialization finished.
+CPU 3: initialization finished.
+CPU 5: initialization finished.
+CPU 2: initialization finished.
+CPU 4: initialization finished.
+CPU 1: initialization finished.
+10
+[promod-all] Th: 1425.559398
+^C^C[RunMainLoop: 956] MTCP thread 0 finished.
+[mtcp_destroy_context:1440] MTCP thread 0 joined.
+[RunMainLoop: 956] MTCP thread 2 finished.
+[mtcp_destroy_context:1440] MTCP thread 2 joined.
+[RunMainLoop: 956] MTCP thread 3 finished.
+[mtcp_destroy_context:1440] MTCP thread 3 joined.
+[RunMainLoop: 956] MTCP thread 6 finished.
+[mtcp_destroy_context:1440] MTCP thread 6 joined.
+[RunMainLoop: 956] MTCP thread 4 finished.
+[mtcp_destroy_context:1440] MTCP thread 4 joined.
+[RunMainLoop: 956] MTCP thread 1 finished.
+[mtcp_destroy_context:1440] MTCP thread 1 joined.
+[RunMainLoop: 956] MTCP thread 5 finished.
+[mtcp_destroy_context:1440] MTCP thread 5 joined.
+[mtcp_destroy:1674] All MTCP threads are joined.
+

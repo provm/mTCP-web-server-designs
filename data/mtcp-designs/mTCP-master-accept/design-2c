@@ -1,0 +1,59 @@
+CLIENT:
+CPU 1: initialization finished.
+[mtcp_create_context:1242] CPU 1 is now the master thread.
+CPU 0: initialization finished.
+Thread 0 handles 1000 flows. connecting to 10.129.28.93:80
+Thread 1 handles 1000 flows. connecting to 10.129.28.93:80
+[Core 0] 1000 Connections Started
+[Core 1] 1000 Connections Started
+^C[Promod-All] Connects:    2000 Read:  994 MB Avg-Resp-Time: 45957 us Max-Resp-Time: 2486194 us
+[RunMainLoop: 862] MTCP thread 0 finished.
+[mtcp_destroy_context:1287] MTCP thread 0 joined.
+[RunMainLoop: 862] MTCP thread 1 finished.
+[mtcp_destroy_context:1287] MTCP thread 1 joined.
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+SERVER:
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+[mtcp_create_context:1395] CPU 0 is now the master thread.
+[0]: 0
+Waiting: CPU 1: initialization finished.
+10
+[promod-all] Th: 994.239278
+^C^C[RunMainLoop: 956] MTCP thread 0 finished.
+[mtcp_destroy_context:1440] MTCP thread 0 joined.
+[RunMainLoop: 956] MTCP thread 1 finished.
+[mtcp_destroy_context:1440] MTCP thread 1 joined.
+[mtcp_destroy:1674] All MTCP threads are joined.
+
+CLIENT:
+CPU 1: initialization finished.
+[mtcp_create_context:1242] CPU 1 is now the master thread.
+CPU 0: initialization finished.
+Thread 0 handles 1000 flows. connecting to 10.129.28.93:80
+Thread 1 handles 1000 flows. connecting to 10.129.28.93:80
+[Core 0] 1000 Connections Started
+[Core 1] 1000 Connections Started
+[Promod-All] Connects:    2000 Read:  982 MB Avg-Resp-Time: 42720 us Max-Resp-Time: 8512185 us
+^C^C^C^C[RunMainLoop: 862] MTCP thread 0 finished.
+[mtcp_destroy_context:1287] MTCP thread 0 joined.
+[RunMainLoop: 862] MTCP thread 1 finished.
+[mtcp_destroy_context:1287] MTCP thread 1 joined.
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+
+SERVER:
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+[mtcp_create_context:1395] CPU 0 is now the master thread.
+[0]: 0
+Waiting: CPU 1: initialization finished.
+10
+[promod-all] Th: 984.462109
+^C^C[RunMainLoop: 956] MTCP thread 0 finished.
+[mtcp_destroy_context:1440] MTCP thread 0 joined.
+[RunMainLoop: 956] MTCP thread 1 finished.
+[mtcp_destroy_context:1440] MTCP thread 1 joined.
+[mtcp_destroy:1674] All MTCP threads are joined.
+

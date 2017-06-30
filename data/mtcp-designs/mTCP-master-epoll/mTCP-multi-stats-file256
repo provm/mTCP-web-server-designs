@@ -1,0 +1,95 @@
+CLEINT:
+CPU 1: initialization finished.
+[mtcp_create_context:1242] CPU 1 is now the master thread.
+CPU 0: initialization finished.
+Thread 0 handles 1000 flows. connecting to 10.129.28.93:80
+Thread 1 handles 1000 flows. connecting to 10.129.28.93:80
+[Core 0] 1000 Connections Started
+[Core 1] 1000 Connections Started
+[Promod-All] Connects:    2000 Read:  285 MB Avg-Resp-Time: 48058 us Max-Resp-Time: 8436566 us
+^C^C^C[RunMainLoop: 862] MTCP thread 0 finished.
+[mtcp_destroy_context:1287] MTCP thread 0 joined.
+[RunMainLoop: 862] MTCP thread 1 finished.
+[mtcp_destroy_context:1287] MTCP thread 1 joined.
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+SERVER:
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+[mtcp_create_context:1369] CPU 0 is now the master thread.
+Waiting: [core.c InitializeMTCPManager] Creating Epoll Worker 6
+[core.c InitializeMTCPManager] Creating Epoll Worker 5
+[eventpoll.c mtcp_epoll_worker] epoll worker created 6
+[eventpoll.c mtcp_epoll_worker] epoll worker created 5
+CPU 6: initialization finished.
+CPU 5: initialization finished.
+[core.c InitializeMTCPManager] Creating Epoll Worker 1
+[core.c InitializeMTCPManager] Creating Epoll Worker 3
+[core.c InitializeMTCPManager] Creating Epoll Worker 4
+[eventpoll.c mtcp_epoll_worker] epoll worker created 3
+[core.c InitializeMTCPManager] Creating Epoll Worker 2
+[eventpoll.c mtcp_epoll_worker] epoll worker created 2
+[eventpoll.c mtcp_epoll_worker] epoll worker created 1
+[eventpoll.c mtcp_epoll_worker] epoll worker created 4
+CPU 2: initialization finished.
+CPU 3: initialization finished.
+CPU 1: initialization finished.
+CPU 4: initialization finished.
+[promod-all] Th: 285.407364
+^C^C^C[RunMainLoop: 926] MTCP thread 2 finished.
+[RunMainLoop: 926] MTCP thread 5 finished.
+[RunMainLoop: 926] MTCP thread 0 finished.
+[mtcp_destroy_context:1414] MTCP thread 0 joined.
+[RunMainLoop: 926] MTCP thread 4 finished.
+[RunMainLoop: 926] MTCP thread 3 finished.
+[RunMainLoop: 926] MTCP thread 6 finished.
+[RunMainLoop: 926] MTCP thread 1 finished.
+
+CLIENT:
+CPU 1: initialization finished.
+[mtcp_create_context:1242] CPU 1 is now the master thread.
+CPU 0: initialization finished.
+Thread 0 handles 1000 flows. connecting to 10.129.28.93:80
+Thread 1 handles 1000 flows. connecting to 10.129.28.93:80
+[Core 0] 1000 Connections Started
+[Core 1] 1000 Connections Started
+[Promod-All] Connects:    2000 Read:  296 MB Avg-Resp-Time: 48696 us Max-Resp-Time: 9857069 us
+^C^C^C[RunMainLoop: 862] MTCP thread 0 finished.
+[mtcp_destroy_context:1287] MTCP thread 0 joined.
+[RunMainLoop: 862] MTCP thread 1 finished.
+[mtcp_destroy_context:1287] MTCP thread 1 joined.
+[mtcp_destroy:1521] All MTCP threads are joined.
+
+SERVER:
+[epserver.c main]  Application initialization finished.
+CPU 0: initialization finished.
+[mtcp_create_context:1369] CPU 0 is now the master thread.
+Waiting: [core.c InitializeMTCPManager] Creating Epoll Worker 6
+[eventpoll.c mtcp_epoll_worker] epoll worker created 6
+CPU 6: initialization finished.
+[core.c InitializeMTCPManager] Creating Epoll Worker 2
+[core.c InitializeMTCPManager] Creating Epoll Worker 4
+[core.c InitializeMTCPManager] Creating Epoll Worker 1
+[core.c InitializeMTCPManager] Creating Epoll Worker 5
+[eventpoll.c mtcp_epoll_worker] epoll worker created 1
+[eventpoll.c mtcp_epoll_worker] epoll worker created 5
+[core.c InitializeMTCPManager] Creating Epoll Worker 3
+[eventpoll.c mtcp_epoll_worker] epoll worker created 3
+[eventpoll.c mtcp_epoll_worker] epoll worker created 2
+CPU 2: initialization finished.
+CPU 3: initialization finished.
+CPU 1: initialization finished.
+CPU 5: initialization finished.
+[eventpoll.c mtcp_epoll_worker] epoll worker created 4
+CPU 4: initialization finished.
+10
+[promod-all] Th: 296.074064
+^C^C^C[RunMainLoop: 926] MTCP thread 1 finished.
+[RunMainLoop: 926] MTCP thread 4 finished.
+[RunMainLoop: 926] MTCP thread 0 finished.
+[mtcp_destroy_context:1414] MTCP thread 0 joined.
+[RunMainLoop: 926] MTCP thread 3 finished.
+[RunMainLoop: 926] MTCP thread 6 finished.
+[RunMainLoop: 926] MTCP thread 2 finished.
+[RunMainLoop: 926] MTCP thread 5 finished.
+

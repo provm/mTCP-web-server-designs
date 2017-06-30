@@ -1,0 +1,14 @@
+Waiting: CPU 0: initialization finished.
+CPU 1: initialization finished.
+[mtcp_create_context:1262] CPU 0 is now the master thread.
+10      0       0       0 0.50 0.00 0.0000000 0.00  0.00 -nan
+1
+20   2000 1012316 1010660 36570514.00 2.00 0.0000001 1521686.00  0.00 0.0000000
+30   2000 1850496 1850496 14457.00 0.00 0.0000000 2790201.00  0.50 0.0000002
+[promod-all] Th: 2168.792785
+^C[RunMainLoop: 886] MTCP thread 0 finished.
+[mtcp_destroy_context:1307] MTCP thread 0 joined.
+[RunMainLoop: 886] MTCP thread 1 finished.
+[mtcp_destroy_context:1307] MTCP thread 1 joined.
+[mtcp_destroy:1541] All MTCP threads are joined.
+

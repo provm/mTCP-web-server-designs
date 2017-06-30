@@ -1,0 +1,22 @@
+Checking link status....................................done
+Port 0 Link Up - speed 1000 Mbps - full-duplex
+Waiting: CPU 0: initialization finished.
+CPU 1: initialization finished.
+[mtcp_create_context:1262] CPU 0 is now the master thread.
+CPU 3: initialization finished.
+CPU 2: initialization finished.
+10      0       0       0 0.00 0.00 -nan 0.00  0.00 -nan
+10
+20   2000 1113004 1111912 37395568.25 1.25 0.0000000 836954.00  0.00 0.0000000
+30   2000 1850624 1850624 7229.00 0.00 0.0000000 1395197.00  0.00 0.0000000
+[promod-all] Th: 2154.737336
+^C[RunMainLoop: 886] MTCP thread 0 finished.
+[mtcp_destroy_context:1307] MTCP thread 0 joined.
+[RunMainLoop: 886] MTCP thread 2 finished.
+[RunMainLoop: 886] MTCP thread 3 finished.
+[mtcp_destroy_context:1307] MTCP thread 2 joined.
+[mtcp_destroy_context:1307] MTCP thread 3 joined.
+[RunMainLoop: 886] MTCP thread 1 finished.
+[mtcp_destroy_context:1307] MTCP thread 1 joined.
+[mtcp_destroy:1541] All MTCP threads are joined.
+
