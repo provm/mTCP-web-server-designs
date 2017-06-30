@@ -1,0 +1,7 @@
+For mTCP shared architecture, the following list of things must be done in order to port legacy master-worker web servers easily:
+
+    -- Implement Non Blocking I/O on mTCP.
+    
+    -- Try existing apache source and port it to use mTCP.
+    
+    -- Test performance of existing source.
