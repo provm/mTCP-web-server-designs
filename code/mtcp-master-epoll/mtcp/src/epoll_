@@ -1,0 +1,73 @@
+eventpoll.c:	ep->usr_queue = CreateEventQueue(size);
+eventpoll.c:	if (!ep->usr_queue) {
+eventpoll.c:	ep->usr_shadow_queue = CreateEventQueue(size);
+eventpoll.c:	if (!ep->usr_shadow_queue) {
+eventpoll.c:		DestroyEventQueue(ep->usr_queue);
+eventpoll.c:	ep->mtcp_queue = CreateEventQueue(size);
+eventpoll.c:	if (!ep->mtcp_queue) {
+eventpoll.c:		DestroyEventQueue(ep->usr_shadow_queue);
+eventpoll.c:		DestroyEventQueue(ep->usr_queue);
+eventpoll.c:	if (pthread_mutex_init(&ep->epoll_lock, NULL)) {
+eventpoll.c:		DestroyEventQueue(ep->mtcp_queue);
+eventpoll.c:		DestroyEventQueue(ep->usr_shadow_queue);
+eventpoll.c:		DestroyEventQueue(ep->usr_queue);
+eventpoll.c:	if (pthread_cond_init(&ep->epoll_cond, NULL)) {
+eventpoll.c:		DestroyEventQueue(ep->mtcp_queue);
+eventpoll.c:		DestroyEventQueue(ep->usr_shadow_queue);
+eventpoll.c:		DestroyEventQueue(ep->usr_queue);
+eventpoll.c:	DestroyEventQueue(ep->usr_queue);
+eventpoll.c:	DestroyEventQueue(ep->usr_shadow_queue);
+eventpoll.c:	DestroyEventQueue(ep->mtcp_queue);
+eventpoll.c:	pthread_mutex_lock(&ep->epoll_lock);
+eventpoll.c:	pthread_cond_signal(&ep->epoll_cond);
+eventpoll.c:	pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:	pthread_cond_destroy(&ep->epoll_cond);
+eventpoll.c:	pthread_mutex_destroy(&ep->epoll_lock);
+eventpoll.c:			pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:	ep->stat.calls++;
+eventpoll.c:	while (ep->num_events == 0 && spin < SPIN_THRESH) {
+eventpoll.c:	if (pthread_mutex_lock(&ep->epoll_lock)) {
+eventpoll.c:	eq = ep->usr_queue;
+eventpoll.c:	eq_shadow = ep->usr_shadow_queue;
+eventpoll.c:		ep->stat.waits++;
+eventpoll.c:		ep->waiting = TRUE;
+eventpoll.c:			ret = pthread_cond_timedwait(&ep->epoll_cond, 
+eventpoll.c:					&ep->epoll_lock, &deadline);
+eventpoll.c:				pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:			ret = pthread_cond_wait(&ep->epoll_cond, &ep->epoll_lock);
+eventpoll.c:				pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:		ep->waiting = FALSE;
+eventpoll.c:			//ret = pthread_cond_signal(&ep->epoll_cond);
+eventpoll.c:			pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:			ep->stat.handled++;
+eventpoll.c:			ep->stat.invalidated++;
+eventpoll.c:	eq = ep->usr_shadow_queue;
+eventpoll.c:			ep->stat.handled++;
+eventpoll.c:			ep->stat.invalidated++;
+eventpoll.c:	pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:	ep->stat.issued++;
+eventpoll.c:		eq = ep->mtcp_queue;
+eventpoll.c:		eq = ep->usr_queue;
+eventpoll.c:		pthread_mutex_lock(&ep->epoll_lock);
+eventpoll.c:		eq = ep->usr_shadow_queue;
+eventpoll.c:			pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:			ep->events[index].sockid, 
+eventpoll.c:			EventToString(ep->events[index].ev.events), 
+eventpoll.c:			ep->start, ep->end, ep->num_events);
+eventpoll.c:		pthread_mutex_unlock(&ep->epoll_lock);
+eventpoll.c:	ep->stat.registered++;
+core.c:			PrintEventStat(i, &g_mtcp[i]->ep->stat);
+core.c:	struct event_queue *usrq = ep->usr_queue;
+core.c:	struct event_queue *mtcpq = ep->mtcp_queue;
+core.c:	pthread_mutex_lock(&ep->epoll_lock);
+core.c:	if (ep->mtcp_queue->num_events > 0) {
+core.c:	if (ep->waiting && (ep->usr_queue->num_events > 0 || 
+core.c:				ep->usr_shadow_queue->num_events > 0)) {
+core.c:				ep->usr_queue->num_events, cur_ts, mtcp->ts_last_event);
+core.c:		ep->stat.wakes++;
+core.c:		pthread_cond_signal(&ep->epoll_cond);
+core.c:	pthread_mutex_unlock(&ep->epoll_lock);
+core.c:		pthread_mutex_lock(&mtcp->ep->epoll_lock);
+core.c:		if (mtcp->ep->waiting) {
+core.c:			pthread_cond_signal(&mtcp->ep->epoll_cond);
+core.c:		pthread_mutex_unlock(&mtcp->ep->epoll_lock);
