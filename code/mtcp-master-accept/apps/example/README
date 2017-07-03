@@ -1,0 +1,17 @@
+========================================================================
+ USAGE OF EXAMPLE APPLICATIONS
+========================================================================
+
+epserver: a simple master-worker mtcp-epoll-based web server
+   Single-Process, Multi-threaded Usage:
+      ./epserver -p www_home -f epserver.conf [-N #cores] 
+      ex) ./epserver -p /home/notav/www -f epserver.conf -N 8
+
+options:
+  www_home: the directory to server. # max files are limited to 
+            MAX_FILES in epserver.c:36
+  -N: number of CPU cores to use. default: all existing cores
+  -p: path to www/ files
+  -f: path to mtcp configuration file
+  -c: the core_id on which the process should run
+      [only works for multi-process mode]
